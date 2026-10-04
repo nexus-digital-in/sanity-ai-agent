@@ -6,10 +6,11 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "sanity build",
-    "deploy": "sanity deploy",
+    "deploy": "wrangler deploy",
     "deploy-graphql": "sanity graphql deploy",
     "dev": "sanity dev",
-    "start": "sanity start"
+    "start": "sanity start",
+    "preview": "wrangler dev"
   },
   "keywords": [
     "sanity"
@@ -26,7 +27,8 @@
     "@types/react": "^19.2.14",
     "eslint": "^10.8.1",
     "prettier": "^3.5",
-    "typescript": "^5.8"
+    "typescript": "^5.8",
+    "wrangler": "^4.141.0"
   },
   "prettier": {
     "bracketSpacing": false,
